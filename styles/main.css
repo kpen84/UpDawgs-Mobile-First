@@ -22,6 +22,9 @@ body{
     text-decoration: none;
     max-width: 100%;
     background-image: url(../images/background4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Header */
@@ -38,8 +41,9 @@ header {
     background-repeat: no-repeat;
     background-position: top left, top right;
     background-color: var(--background);
-    box-shadow: 30px -30px 40px rgba(0, 0, 0, .3),
-    -30px -30px 40px rgba(0, 0, 0, .3);
+    
+    box-shadow: 30px 30px 40px rgba(0, 0, 0, .3),
+    -30px 30px 40px rgba(0, 0, 0, .3);
     backdrop-filter: blur(10px);
 }
 
