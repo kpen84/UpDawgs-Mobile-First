@@ -74,8 +74,6 @@ main{
 }
 
 .about{
-        width: 100px;
-        height: 100px;
         background-color: #FFC300;
         box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
         clip-path: inset(0px -15px 0px -15px);
