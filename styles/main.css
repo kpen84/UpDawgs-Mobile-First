@@ -26,7 +26,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    backdrop-filter: saturate(2.5);
+    /*had backdrop-filter: saturate(2.5); in body tag causing 
+    header to not stay in fixed position*/
 }
 
 /* Header */
@@ -36,6 +37,7 @@ body{
 header {
     position: fixed;
     top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +49,6 @@ header {
     background-position: top left, top right;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
     clip-path: inset(-15px 0px -15px 0px);
-    backdrop-filter: blur(5px) brightness(90%);
     background-color: var(--bg-color);
 }
 
@@ -64,6 +65,7 @@ header {
   
 .navbar a{
     color: var(--text-color);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
     font-size: 1.2em;
     padding: 0 1em;
     font-weight: bolder;
@@ -85,7 +87,8 @@ header {
 main{
     max-width: 900px;
     margin: auto;
-    background-image: url(/images/hotdogbannerog.jpg);
+    background-image: url(/images/hotdogbanner.png);
+    background-color: #FFE016;
 }
 
 .about{
