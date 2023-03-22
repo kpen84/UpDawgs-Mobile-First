@@ -80,7 +80,6 @@ main{
         /* position and left properties required to bring element out from edge of parent
         so that shadow can be seen; margin-left would also achieve the same thing */
 
-    }
     padding: 2em;
 }
 
