@@ -74,8 +74,17 @@ main{
 }
 
 .about{
-    background-color: var(--background);
-    box-shadow: var(--boxshadow);
+        width: 100px;
+        height: 100px;
+        background-color: #FFC300;
+        box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
+        clip-path: inset(0px -15px 0px -15px);
+
+        /* position and left properties required to bring element out from edge of parent
+        so that shadow can be seen; margin-left would also achieve the same thing */
+        position: relative;
+        left: 15px;
+    }
     padding: 2em;
 }
 
