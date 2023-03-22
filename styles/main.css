@@ -26,6 +26,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+            box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
+        clip-path: inset(0px -15px 0px -15px);
+
+        /* position and left properties required to bring element out from edge of parent
+        so that shadow can be seen; margin-left would also achieve the same thing */
+
 }
 
 /* Header */
@@ -41,8 +47,7 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top left, top right;
-    box-shadow: 30px 30px 40px rgba(0, 0, 0, .3),
-    -30px 30px 40px rgba(0, 0, 0, .3);
+   
     backdrop-filter: blur(7px);
 }
 
@@ -74,11 +79,6 @@ main{
 }
 
 .about{
-        box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
-        clip-path: inset(0px -15px 0px -15px);
-
-        /* position and left properties required to bring element out from edge of parent
-        so that shadow can be seen; margin-left would also achieve the same thing */
 
     padding: 2em;
 }
