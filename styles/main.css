@@ -35,11 +35,10 @@ body{
     header to not stay in fixed position*/
 }
 
-/* Header */
-
-
+/*Header Start*/
 
 header {
+    font-family: 'Happy Monkey', cursive;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -90,9 +89,9 @@ header {
     text-shadow: var(--text-shadow);
 }
 
+/*Header End*/
 
-
-/* Main */
+/*Main Start*/
 
 main{
     max-width: 900px;
@@ -145,3 +144,19 @@ p{
     font-family: 'Gloria Hallelujah', cursive;
 }
 
+/*Main End*/
+
+/*Footer Start*/
+
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mascot{
+    max-width: 100px;
+    transform: scaleX(-1);
+}
+
+/*Footer End*/
