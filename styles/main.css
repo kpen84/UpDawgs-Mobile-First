@@ -92,7 +92,7 @@ main{
     max-width: 900px;
     margin: auto;
     background-image: url(/images/hotdogbanner.png);
-    background-color: #DF542F;
+    /*background-color: #DF542F;*/
 }
 
 .about{
