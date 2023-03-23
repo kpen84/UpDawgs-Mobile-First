@@ -20,12 +20,17 @@ font-family: 'Luckiest Guy', cursive;*/
     --text-shadow: 3px 3px 3px rgba(0, 0, 0, .7);
   }
 
+  *{
+    text-decoration: none;
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+  }
+
 body{
     display: flex;
     justify-content: center;
     margin: 0px;
     scroll-behavior: smooth;
-    text-decoration: none;
     max-width: 100%;
     background: linear-gradient(140deg, rgba(215,49,53,1) 0%, rgba(255,224,22,1) 100%);
     background-repeat: no-repeat;
@@ -39,6 +44,9 @@ body{
 
 header {
     font-family: 'Happy Monkey', cursive;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bolder;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -47,6 +55,7 @@ header {
     align-items: center;
     width: 100%;
     max-width: 900px;
+    max-height: 140px;
     background-image: url(../images/header-left.png), url(../images/header-right.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -62,19 +71,13 @@ header {
 }
 
 .navbar {
-    text-transform: uppercase;
     display: flex;
     list-style-type: none;
 
 }
   
 .navbar a{
-    color: var(--text-color);
-    text-shadow: var(--text-shadow);
-    font-size: 1.2em;
     padding: 0 1em;
-    font-weight: bolder;
-    text-decoration: none;
 }
 
 .contact{
@@ -84,9 +87,6 @@ header {
 .contact a{
     font-size: 1.5em;
     padding: 0 1em;
-    text-decoration: none;
-    color: var(--text-color);
-    text-shadow: var(--text-shadow);
 }
 
 /*Header End*/
@@ -95,16 +95,13 @@ header {
 
 main{
     max-width: 900px;
-    margin: auto;
     background-image: url(/images/hotdogbanner.png);
     /*background-color: #DF542F;*/
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
+    clip-path: inset(0px -15px 0px -15px);
 }
 
 .about{
-    color: var(--text-color);
-    text-shadow: var(--text-shadow);
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
-    clip-path: inset(0px -15px 0px -15px);
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -113,7 +110,6 @@ main{
 .about-text{
     padding-top: 150px;
     /*background-color: var(--background)*/
-    
 }
 
 #updawg{
@@ -123,7 +119,7 @@ main{
 
 .landing-img img{
     width: 100%;
-    height: auto;
+    height: 50%;
     display: block;
     
 }
@@ -148,15 +144,37 @@ p{
 
 /*Footer Start*/
 
-.footer-text{
-    display: flex;
+footer{
+    font-family: 'Happy Monkey', cursive;
+    width: 100%;
+    max-height: 140px;
     justify-content: space-between;
     align-items: center;
 }
 
+.footer-main{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 0 1em;
+}
+
+.location{
+    width: 33.33%;
+}
+
+.hours{
+    width: 33.33%;
+    text-align: center;
+}
+
 .mascot{
-    max-width: 100px;
+    width: 33.33%;
     transform: scaleX(-1);
+}
+
+.mascot img{
+    max-width: 150px;
 }
 
 /*Footer End*/
