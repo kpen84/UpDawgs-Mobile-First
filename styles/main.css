@@ -21,8 +21,9 @@ body{
     scroll-behavior: smooth;
     text-decoration: none;
     max-width: 100%;
-    background-image: url(../images/background4.jpg);
-    background-position: 0 -50px;
+    /*background-image: url(../images/background6.jpg);*/
+    background: rgb(215,49,53);
+    background: linear-gradient(140deg, rgba(215,49,53,1) 0%, rgba(255,224,22,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
