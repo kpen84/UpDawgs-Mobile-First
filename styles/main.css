@@ -3,15 +3,18 @@
 #ffdb58	yellow
 #931009	red
 #c48d54	bread
-#f1e4d6	off white*/
+#f1e4d6	off white
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Happy Monkey', cursive;
+font-family: 'Luckiest Guy', cursive;*/
 
 #more {display: none;}
 
 :root {
     --bg-color: #D73135;
-    --text-color: #FDF9D6;
+    --text-color: #ffffff;
     --hover-color: #FFDB58;
-    --background: rgba(0, 0, 0, 0);
+    --background: rgba(0, 0, 0, .3);
     --boxshadow: 30px 30px 40px rgba(0, 0, 0, .3),
     -30px 30px 40px rgba(0, 0, 0, .3);
   }
@@ -23,8 +26,6 @@ body{
     scroll-behavior: smooth;
     text-decoration: none;
     max-width: 100%;
-    /*background-image: url(../images/background6.jpg);*/
-    background: rgb(215,49,53);
     background: linear-gradient(140deg, rgba(215,49,53,1) 0%, rgba(255,224,22,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,31 +92,50 @@ main{
     max-width: 900px;
     margin: auto;
     background-image: url(/images/hotdogbanner.png);
-    background-color: #FFE016;
+    background-color: #DF542F;
 }
 
 .about{
+    color: var(--text-color);
+    text-shadow: 5px 5px 5px rgba(146,	16,	8, 1.0);
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
     clip-path: inset(0px -15px 0px -15px);
     padding: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-text{
     padding-top: 150px;
+    /*background-color: var(--background)*/
+    
 }
 
-.updawg{
-    max-width: 120px;
-    top:10px;
+#updawg{
+    max-width: 200px;
+    padding-left:1em;
   }
 
 .landing-img img{
     width: 100%;
     height: auto;
+    display: block;
+    
 }
 
-h1,
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 h2{
-    margin: 0;
+    font-family: 'Happy Monkey', cursive;
+}
+
+p{
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
