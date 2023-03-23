@@ -5,6 +5,8 @@
 #c48d54	bread
 #f1e4d6	off white*/
 
+#more {display: none;}
+
 :root {
     --bg-color: #D73135;
     --text-color: #FDF9D6;
@@ -116,3 +118,4 @@ h1,
 h2{
     margin: 0;
 }
+
