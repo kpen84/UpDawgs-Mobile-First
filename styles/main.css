@@ -17,6 +17,7 @@ font-family: 'Luckiest Guy', cursive;*/
     --background: rgba(0, 0, 0, .3);
     --boxshadow: 30px 30px 40px rgba(0, 0, 0, .3),
     -30px 30px 40px rgba(0, 0, 0, .3);
+    --text-shadow: 3px 3px 3px rgba(0, 0, 0, .7);
   }
 
 body{
@@ -57,7 +58,7 @@ header {
 }
 
 .logo img{
-    max-width: 150px;
+    max-width: 120px;
     padding: .5em;
 }
 
@@ -65,23 +66,28 @@ header {
     text-transform: uppercase;
     display: flex;
     list-style-type: none;
+
 }
   
 .navbar a{
     color: var(--text-color);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+    text-shadow: var(--text-shadow);
     font-size: 1.2em;
     padding: 0 1em;
     font-weight: bolder;
     text-decoration: none;
 }
 
+.contact{
+    display: flex;
+    flex-wrap: nowrap;
+}
 .contact a{
     font-size: 1.5em;
-    padding-right: 1.5em;
+    padding: 0 1em;
     text-decoration: none;
     color: var(--text-color);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+    text-shadow: var(--text-shadow);
 }
 
 
@@ -97,7 +103,7 @@ main{
 
 .about{
     color: var(--text-color);
-    text-shadow: 5px 5px 5px rgba(146,	16,	8, 1.0);
+    text-shadow: var(--text-shadow);
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
     clip-path: inset(0px -15px 0px -15px);
     padding: 2em;
