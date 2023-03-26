@@ -22,17 +22,20 @@ font-family: 'Luckiest Guy', cursive;*/
   }
 
   *{
+
+    min-width: 0;
     text-decoration: none;
     color: var(--text-color);
     text-shadow: var(--text-shadow);
+    margin: 0;
   }
 
 body{
+    font-size: 1.5vw;
     display: flex;
     justify-content: center;
-    margin: 0px;
     scroll-behavior: smooth;
-    max-width: 100%;
+    width: 100%;
     background: linear-gradient(140deg, rgba(215,49,53,1) 0%, rgba(255,224,22,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,19 +48,30 @@ body{
 .banner{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    min-width: 0;
     max-width: 900px;
     background-color: var(--bg-color);
-    justify-content: space-between;
-    align-items: center;
     background-image: url(../images/header-left.png), url(../images/header-right.png), url(../images/footer-left.png), url(../images/footer-right.png);
     background-repeat: no-repeat;
     background-position: top left, top right, bottom left, bottom right;
-    background-size: 20%;
+    background-size: 25%;
 }
 
-.banner-img{
-    height: 50vh;
+.banner-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-img img{
+    height: 30em;
+}
+
+.banner-text img{
+    height: 5em;
 }
 
 /*Banner End*/
@@ -71,7 +85,7 @@ header {
     font-weight: bolder;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,6 +95,7 @@ header {
     background-image: url(../images/header-left.png), url(../images/header-right.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-size: 35%;
     background-position: top left, top right;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
     clip-path: inset(-15px 0px -15px 0px);
@@ -88,14 +103,17 @@ header {
 }
 
 .logo img{
-    max-width: 120px;
+    max-width: 7.5em;
     padding: .5em;
 }
 
 .navbar {
     display: flex;
     list-style-type: none;
+}
 
+header ul.navbar{
+    padding: 0;
 }
   
 .navbar a{
@@ -116,22 +134,19 @@ header {
 /*Main Start*/
 
 main{
+    width: 100%;
     max-width: 900px;
-    background-image: url(/images/hotdogbanner.png);
-    /*background-color: #DF542F;*/
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
     clip-path: inset(0px -15px 0px -15px);
+    background-image: url(/images/hotdogbanner2.png);
+    background-repeat: repeat-y;
+    height: 9000px;
 }
 
 .about{
     padding: 2em;
     display: flex;
     flex-direction: column;
-}
-
-.about-text{
-    padding-top: 150px;
-    /*background-color: var(--background)*/
 }
 
 #updawg{
