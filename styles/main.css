@@ -8,7 +8,7 @@ font-family: 'Gloria Hallelujah', cursive;
 font-family: 'Happy Monkey', cursive;
 font-family: 'Luckiest Guy', cursive;*/
 
-#more {display: none;}
+
 
 
 :root {
@@ -124,6 +124,10 @@ header ul.navbar{
     padding: 0 1em;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
 .contact{
     display: flex;
     flex-wrap: nowrap;
@@ -184,6 +188,12 @@ h2{
 p{
     font-family: 'Gloria Hallelujah', cursive;
 }
+
+#myBtn:hover{
+    cursor: pointer;
+}
+
+#more {display: none;}
 
 /*Main End*/
 
