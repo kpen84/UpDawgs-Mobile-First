@@ -46,25 +46,18 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    max-width: 900px;
     background-color: var(--bg-color);
     justify-content: space-between;
     align-items: center;
-    z-index: -100;
+    background-image: url(../images/header-left.png), url(../images/header-right.png), url(../images/footer-left.png), url(../images/footer-right.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    background-size: 20%;
 }
 
-.banner img{
-    max-width: 900px;
-    
-}
-
-.middle-banner{
-    height: 50px;
-    text-align: center;
-}
-.middle-banner img{
-    max-width: 500px;
-    z-index: 100;
-    
+.banner-img{
+    height: 50vh;
 }
 
 /*Banner End*/
