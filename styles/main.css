@@ -120,7 +120,7 @@ header div{
 
 .navbar ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style-type: none;
     padding-inline-start: 0;
@@ -163,8 +163,7 @@ main{
 }
 
 .updawg{
-    width: 400px;
-    flex-shrink: 0;
+    max-width: 400px;
     padding: 0 3rem;
   }
 
@@ -176,9 +175,11 @@ main{
 .landing-img img{
     width: 100%;
     height: 50%;
-    
 }
 
+.about h1 img{
+    width: 100%;
+}
 /*h1{
     font-family: 'Luckiest Guy', cursive;
     font-size: 2.5em;
@@ -231,13 +232,14 @@ button{
 .footer-main{
     display: flex;
     align-items: center;
-    font-size: .7em;
-    font-family: 'Happy Monkey', cursive;
+    font-size: 1em;
     text-transform: uppercase;
+    font-family: 'Happy Monkey', cursive;
     font-weight: bolder;
     width: 100%;
     max-width: 900px;
     max-height: 140px;
+    min-height: 70px;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
     clip-path: inset(-15px 0px -15px 0px);
     background-color: var(--bg-color);
@@ -246,7 +248,7 @@ button{
 
 .footer-main div{
     width: 33.33%;
-
+    padding: 0 1em;
 }
 
 
@@ -261,14 +263,17 @@ button{
 .hours p{
     padding: 0;
     text-align: center;
+    font-size: 1em;
 }
 
 .mascot{
     transform: scaleX(-1);
+    max-height: 140px;
+    z-index: -1000;
 }
 
 .mascot img{
-    max-width: 150px;
+    max-height: 140px;
 }
 
 /*Footer End*/
