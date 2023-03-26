@@ -214,10 +214,14 @@ button{
 
 /*Footer Start*/
 
-footer{
+
+
+.footer-main{
+    display: flex;
+    align-items: center;
+    font-size: .7em;
     font-family: 'Happy Monkey', cursive;
     text-transform: uppercase;
-    font-size: .7em;
     font-weight: bolder;
     width: 100%;
     max-width: 900px;
@@ -228,27 +232,26 @@ footer{
     overflow-y: hidden;
 }
 
-.footer-main{
-    display: flex;
-    align-items: center;
-    font-size: 1.2em;
-}
 .footer-main div{
     width: 33.33%;
+
 }
 
-.location{
-    width: 33.33%;
-    padding: 0 1em;
+
+.location {
+    margin-left: 1em;
 }
 
-.hours{
-    width: 33.33%;
+.location a{
+    padding: 0;
+}
+
+.hours p{
+    padding: 0;
     text-align: center;
 }
 
 .mascot{
-    width: 33.33%;
     transform: scaleX(-1);
 }
 
