@@ -17,7 +17,7 @@ function moreText() {
   }
 
 
-  function openCity(foodName) {
+  function openFood(foodName) {
     var i;
     var x = document.getElementsByClassName("food");
     for (i = 0; i < x.length; i++) {
