@@ -90,12 +90,12 @@ body{
 }
 
 .banner-img img{
-    max-width: 70vw;
+    max-width: 800px;
     max-height: 70vh;
 }
 
 .banner-text img{
-    max-width: 70vw;
+    max-width: 800px;
     max-height: 15vh;
 }
 
