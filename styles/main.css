@@ -129,10 +129,12 @@ header {
 
 header div{
     width: 20%;
+    display: flex;
 }
 
 .navbar{
     width: 60%;
+    justify-content: space-around;
 }
 
 .logohbmenu button{
@@ -150,11 +152,11 @@ header div{
 }
 
 #logo{
-    display: none;
+    display: flex;
 }
 
 img#hbmenu{
-    display: block;
+    display: none;
     padding: .3em;
     max-height: 35px;
     border-radius: 25%;
@@ -177,12 +179,12 @@ a:hover{
 }
 
 .contact{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+    margin-right: 1em;
 }
+
 .contact a{
     padding: 0 1em;
+    margin-top: 7px;
 }
 
 /*Header End*/
@@ -222,8 +224,6 @@ main{
     height: 50%;
 }
 
-
-
 .button{
     display: flex;
     justify-content: center;
@@ -249,7 +249,21 @@ main{
 
 /*Menu Start*/
 
+.food{
+    width: 100%;
+    max-width: 900px;
+}
 
+.food img{
+    width:33.33%;
+    object-fit: cover;
+}
+
+.menu .food div{
+    display: flex;
+    flex-direction: column;
+    width: 66.66%;
+}
 
 /*Menu End*/
 
@@ -303,3 +317,32 @@ main{
 }
 
 /*Footer End*/
+
+@media only screen and (max-width: 650px) {
+    .food img{
+        display: none;
+    }
+    .menu .food div{
+        width: 100%;
+    }
+    #logo{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    img#hbmenu{
+        display: block;
+    }
+    header .contact{
+        width: 50%;
+        justify-content: flex-end;
+    }
+    .contact{
+
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+}

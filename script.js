@@ -23,5 +23,5 @@ function moreText() {
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
-    document.getElementById(foodName).style.display = "block";
+    document.getElementById(foodName).style.display = "flex";
   }
