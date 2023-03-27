@@ -1,6 +1,6 @@
 // Read More Button //
 
-function myFunction() {
+function moreText() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
@@ -16,3 +16,12 @@ function myFunction() {
     }
   }
 
+
+  function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+  }

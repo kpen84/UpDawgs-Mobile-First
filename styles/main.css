@@ -30,6 +30,28 @@ font-family: 'Luckiest Guy', cursive;*/
     margin: 0;
   }
 
+  h1{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5em;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Happy Monkey', cursive;
+    padding: 1rem 3rem;
+}
+
+p{
+    font-family: 'Happy Monkey', cursive;
+    padding: 1rem 3rem;
+    font-size: 1.2em;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -116,7 +138,7 @@ header div{
 .logohbmenu button{
     background: transparent;
     border: none;
-    padding: 0;
+    padding: 1em;
 }
 
 .logohbmenu button img{
@@ -182,7 +204,9 @@ main{
     padding: 2rem 0;
 }
 
-h1 .updawg{
+
+
+.updawg{
     width: 50%;
     min-width: 300px;
     padding: 0 3rem;
@@ -198,27 +222,7 @@ h1 .updawg{
     height: 50%;
 }
 
-/*h1{
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 2.5em;
-    font-weight: bolder;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1rem 1.5rem;
-}*/
 
-h2{
-    font-family: 'Happy Monkey', cursive;
-    padding: 1rem 3rem;
-}
-
-p{
-    font-family: 'Happy Monkey', cursive;
-    padding: 1rem 3rem;
-    font-size: 1.2em;
-}
 
 .button{
     display: flex;
@@ -243,9 +247,13 @@ p{
 
 /*Main End*/
 
+/*Menu Start*/
+
+
+
+/*Menu End*/
+
 /*Footer Start*/
-
-
 
 .footer-main{
     display: flex;
