@@ -339,9 +339,7 @@ main{
         width: 50%;
         justify-content: flex-end;
     }
-    .contact{
 
-    }
 }
 
 @media only screen and (max-width: 550px) {
