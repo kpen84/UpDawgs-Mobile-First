@@ -250,6 +250,10 @@ main{
 
 /*Menu Start*/
 
+.menu{
+    background-color: rgba(0,0,0,0.75);;
+}
+
 .food{
     width: 100%;
     max-width: 900px;
