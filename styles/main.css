@@ -60,7 +60,6 @@ body{
     background: linear-gradient(140deg, rgba(215,49,53,1) 0%, rgba(255,224,22,1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
-    background-attachment: 0;
     /*had backdrop-filter: saturate(2.5); in body tag causing 
     header to not stay in fixed position*/
 }
@@ -251,18 +250,35 @@ main{
 /*Menu Start*/
 
 .menu{
-    background-color: rgba(0,0,0,0.75);;
+    background-color: rgba(0,0,0,0.75);
+    width: 85%;
+    border-radius: 25px;
+    align-items: center;
+    margin: auto;
+    padding: 1em;
+}
+
+.w3-bar.w3-black{
+margin-top: 1em;
+text-align: center;
+width: 100%;
+}
+
+button.w3-bar-item{
+    font-size: 100%;
+    background-color: transparent;
+    
 }
 
 .food{
     width: 100%;
-    max-width: 900px;
     display: flex;
 }
 
 .food img{
     width:33.33%;
     object-fit: cover;
+    border-radius: 25px 0 0 25px;
 }
 
 .menu .food div{
