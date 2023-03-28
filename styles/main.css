@@ -19,7 +19,7 @@ font-family: 'Luckiest Guy', cursive;*/
     --boxshadow: 30px 30px 40px rgba(0, 0, 0, .3),
     -30px 30px 40px rgba(0, 0, 0, .3);
     --text-shadow: 3px 3px 3px rgba(0, 0, 0, .8);
-    --max-width: 900px;
+    --tab-width: 900px;
   }
 
   *{
@@ -86,17 +86,27 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
+}
+
+.banner-img{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .banner-img img{
-    max-width: 800px;
-    max-height: 70vh;
+    width: 50%;
+}
+
+.banner-text{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .banner-text img{
-    max-width: 800px;
-    max-height: 15vh;
+    width: 50%;
 }
 
 /*Banner End*/
@@ -115,7 +125,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 900px;
     max-height: 140px;
     background-image: url(../images/header-left.png), url(../images/header-right.png);
     background-repeat: no-repeat;
@@ -141,6 +150,7 @@ header div{
     background: transparent;
     border: none;
     padding: 1em;
+    width: 20%;
 }
 
 .logohbmenu button img{
@@ -151,15 +161,15 @@ header div{
 
 }
 
-#logo{
-    display: flex;
-}
-
 img#hbmenu{
     display: none;
     padding: .3em;
     max-height: 35px;
     border-radius: 25%;
+}
+
+#logo{
+    max-height: 140px;
 }
 
 .navbar ul{
@@ -180,6 +190,7 @@ a:hover{
 
 .contact{
     margin-right: 1em;
+    justify-content: flex-end;
 }
 
 .contact a{
@@ -213,16 +224,6 @@ main{
     min-width: 300px;
     padding: 0 3rem;
   }
-
-.landing-img{
-    max-height: 500px;
-    display: none;
-}
-
-.landing-img img{
-    width: 100%;
-    height: 50%;
-}
 
 .button{
     display: flex;
@@ -278,13 +279,12 @@ main{
     font-family: 'Happy Monkey', cursive;
     font-weight: bolder;
     width: 100%;
-    max-width: 900px;
     max-height: 140px;
     min-height: 70px;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
     clip-path: inset(-15px 0px -15px 0px);
     background-color: var(--bg-color);
-    overflow-y: hidden;
+    overflow-y: visible
 }
 
 .footer-main div{
@@ -309,17 +309,23 @@ main{
 
 .mascot{
     transform: scaleX(-1);
-    max-height: 140px;
-    z-index: -1000;
+    z-index: 1000;
+    height: 100%;
 }
 
 .mascot img{
-    max-height: 140px;
+    max-height: 180px;
+
 }
 
 /*Footer End*/
 
 @media only screen and (max-width: 650px) {
+
+    .banner{
+        display: none;
+    }
+
     .food img{
         display: none;
     }
@@ -342,6 +348,22 @@ main{
 
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (min-width: 1500px) {
+    main{
+        max-width: 1200px;
+    }
+}   
+    .banner{
+        max-width: 1200px;
+    }
 
-}
+
+
+    @media only screen and (min-width: 1800px) {
+        main{
+            max-width: 1500px;
+        }
+    }   
+        .banner{
+            max-width: 1500px;
+        }
