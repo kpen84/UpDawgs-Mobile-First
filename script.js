@@ -17,11 +17,20 @@ function moreText() {
   }
 
 
-  function openFood(foodName) {
-    var i;
-    var x = document.getElementsByClassName("food");
+  function openFood(evt, foodName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("food");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
     document.getElementById(foodName).style.display = "flex";
+    evt.currentTarget.className += " active";
   }
+
+
+
+
