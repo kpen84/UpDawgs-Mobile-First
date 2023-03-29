@@ -51,7 +51,7 @@ font-family: 'Luckiest Guy', cursive;*/
     font-weight: bolder;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     text-transform: uppercase;
 }
@@ -157,6 +157,11 @@ body{
     color: #ffffff;
     text-transform: uppercase;
     transition: 0.3s;
+    padding: .5em;
+  }
+
+  #side-logo{
+    max-width: 40%;
     padding: .5em;
   }
 
@@ -287,10 +292,15 @@ main{
     flex-direction: column;
     padding: 2em 0;
 }
+.about h1{
+    display: none;
+    padding: 1rem 3rem;
+    text-align: left;
+}
 
 .updawg{
     width: 50%;
-    min-width: 300px;
+    min-width: 350px;
     padding: 0 3rem;
   }
 
@@ -431,6 +441,16 @@ h2.menu-button{
 }
 
 /*Footer End*/
+
+@media only screen and (max-width: 450px) {
+    .about h1{
+        display: flex;
+    }
+
+    .updawg{
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 650px) {
 
