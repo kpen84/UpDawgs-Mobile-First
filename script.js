@@ -33,11 +33,11 @@ function moreText() {
 
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "60%";
+  document.getElementById("mySidenav").style.left = "0";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.left = "-1000px";
 }
 
 
