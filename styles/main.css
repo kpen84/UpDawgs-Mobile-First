@@ -34,6 +34,19 @@ font-family: 'Luckiest Guy', cursive;*/
     all: unset;
   }
 
+  .fade-in{
+    animation: fadeIn 1s;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .active{
+    background-color: black;
+  }
+
   h1{
     font-family: 'Luckiest Guy', cursive;
     font-size: 2.5em;
@@ -217,7 +230,7 @@ main{
 .about{
     display: flex;
     flex-direction: column;
-    padding: 2rem 0;
+    padding: 2em 0;
 }
 
 .updawg{
@@ -261,7 +274,8 @@ main{
     border-radius: 25px;
     align-items: center;
     margin: auto;
-    padding: 1em;
+    margin-bottom: 2em;
+    padding: 1em 2em;
 }
 
 .menu-button-bar{
@@ -269,6 +283,7 @@ main{
     text-align: center;
     width: 100%;
 }
+
 
 .menu-button-bar button{
     background-color: transparent;
@@ -284,7 +299,7 @@ h2.menu-button{
 .menu-button:hover{
     cursor: pointer;
     transition-duration: .5s;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .food{
@@ -293,10 +308,7 @@ h2.menu-button{
     text-overflow: scroll;
     background-color: black;
     border-radius: 25px;
-}
-
-.active{
-    background-color: black;
+    transition-duration: 1.5s;
 }
 
 .food img{
@@ -373,18 +385,38 @@ h2.menu-button{
     .food img{
         display: none;
     }
+
+    .menu{ 
+        width: 100%;
+        border-radius: 0%;
+        padding: 0;
+    }
+
+    .food {
+        border-radius: 0%;
+    }
+
     .menu .food div{
         width: 100%;
     }
+
+    .menu-button-bar{
+        font-size: 10px;
+    }
+
+
     #logo{
         display: none;
     }
+
     .navbar{
         display: none;
     }
+
     img#hbmenu{
         display: block;
     }
+
     header .contact{
         width: 50%;
         justify-content: flex-end;
