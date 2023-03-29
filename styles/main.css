@@ -30,6 +30,10 @@ font-family: 'Luckiest Guy', cursive;*/
     margin: 0;
   }
 
+  button{
+    all: unset;
+  }
+
   h1{
     font-family: 'Luckiest Guy', cursive;
     font-size: 2.5em;
@@ -216,8 +220,6 @@ main{
     padding: 2rem 0;
 }
 
-
-
 .updawg{
     width: 50%;
     min-width: 300px;
@@ -231,16 +233,20 @@ main{
 
 #myBtn{
     font-family: 'Happy Monkey', cursive;
-    font-size: 1em;
     margin: .5rem .5rem;
+    font-size: 1.5em;
     border: none;
     background-color: transparent;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 5px 10px;
 }
 
 #myBtn:hover{
     cursor: pointer;
+    border-radius: 25px;
+    transition-duration: .5s;
+    background-color: rgba(0, 0, 0, .1);
 }
 
 #more {display: none;}
@@ -258,21 +264,35 @@ main{
     padding: 1em;
 }
 
-.w3-bar.w3-black{
-margin-top: 1em;
-text-align: center;
-width: 100%;
+.menu-button-bar{
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
 }
 
-button.w3-bar-item{
-    font-size: 100%;
+.menu-button-bar button{
     background-color: transparent;
-    
+    padding: 0;
+    margin: 0;
+}
+
+h2.menu-button{
+    padding: 5px 10px;
+    border-radius: 20px 20px 0 0;
+}
+
+.menu-button:hover{
+    cursor: pointer;
+    transition-duration: .5s;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .food{
     width: 100%;
     display: flex;
+    text-overflow: scroll;
+    background-color: black;
+    border-radius: 25px;
 }
 
 .food img{
