@@ -14,7 +14,7 @@
 <body>
 <main>
 
-    <!--Banner Start-->
+    <!--Hero Start-->
 
     <div class="banner">
         <div class="banner-contents">
@@ -30,26 +30,22 @@
         </div>
     </div>
 
-    <!--Banner End-->
+    <!--Hero End-->
 
     <!-- Header Start-->
     
     <header>
 
-       <!--- <div class="hbmenu">
-            <img src="/images/hbmenupng.png"></img>
-        </div>-->
-
         <div class="logohbmenu">
             <img id="logo" src="images/finallogo-small.png"></img>
-            <button><img id="hbmenu" src="/images/hbmenupng.png"></img></button>
+            <button onclick="openNav()"><img id="hbmenu" src="/images/hbmenupng.png"></img></button>
         </div>
 
         <div class="navbar">
             <ul >
             <li><a href="index.html">home</index></a>
             <li><a href="menu.html">menu</a></li>
-            <li><a href="order.html">order&nbspnow</a></li>     
+            <li><a href="https://www.kfc.com">order&nbspnow</a></li>     
             </ul>
         </div>
 
@@ -66,9 +62,23 @@
 
     <!--Main Start-->
 
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+            <li onclick="closeNav()"><a href="index.html">home</index></a>
+            </ul>
+            <ul>
+            <li onclick="closeNav()"><a href="menu.html">menu</a></li>
+            </ul>
+            <ul>
+            <li onclick="closeNav()"><a href="https://www.kfc.com">order&nbspnow</a></li>     
+            </ul>
 
+            <a onclick="closeNav()" href="https://goo.gl/maps/ws2dVEXHYCK1686dA">42 Wallaby Way, Sydney, Australia, 2000</a>
 
+            <p>Mon-Sat 8am-10pm AEST</p>
 
+    </div>
     
     <div class="about">
 

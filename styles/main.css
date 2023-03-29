@@ -8,9 +8,6 @@ font-family: 'Gloria Hallelujah', cursive;
 font-family: 'Happy Monkey', cursive;
 font-family: 'Luckiest Guy', cursive;*/
 
-html{
-    min-height: 100%;
-}
 
 :root {
     --bg-color: #D73135;
@@ -83,6 +80,7 @@ body{
 }
 
 /*Banner Start*/
+
 .banner{
     display: flex;
     flex-direction: column;
@@ -127,6 +125,62 @@ body{
 }
 
 /*Banner End*/
+
+/*Side Nav Start*/
+
+.sidenav{
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    width: 0;
+    position: fixed; 
+    z-index: 2000; 
+    top: 0; 
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    padding-top: 60px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .sidenav a,
+  .sidenav ul,
+  .sidenav p {
+    font-family: 'Happy Monkey', cursive;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.3s;
+    padding: .5em;
+  }
+
+  .closebtn{
+    padding: 0;
+  }
+  
+.sidenav a:hover {
+    color: #FFDB58;
+}
+  
+.sidenav li{
+    list-style: none;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*Side Nav End*/
 
 /*Header Start*/
 
