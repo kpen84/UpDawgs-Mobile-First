@@ -20,32 +20,54 @@ font-family: 'Luckiest Guy', cursive;*/
     --tab-width: 900px;
   }
 
-  *{
+*{
     min-width: 0;
     text-decoration: none;
     color: var(--text-color);
     text-shadow: var(--text-shadow);
     margin: 0;
-  }
+}
 
-  button{
+ul{
+    list-style-type: none;
+}
+
+a,
+button{
     all: unset;
-  }
+}
 
-  .fade-in{
+header a:hover,
+li:hover,
+#myBtn:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.15);
+    color: #FFDB58;
+    cursor: pointer;
+}
+
+a:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.15);
+    color: #FFDB58;
+    cursor: pointer;
+}
+
+
+.fade-in{
     animation: fadeIn 1s;
-  }
+}
 
-  @keyframes fadeIn {
+@keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
+}
 
-  .active{
+.active{
     background-color: black;
-  }
+}
 
-  h1{
+h1{
     font-family: 'Luckiest Guy', cursive;
     font-size: 2.5em;
     font-weight: bolder;
@@ -132,11 +154,11 @@ body{
     height: 100%;
     margin: 0;
     overflow: hidden;
-    width: 0;
+    width: 60%;
     position: fixed; 
     z-index: 2000; 
     top: 0; 
-    left: 0;
+    left: -100%;
     background-color: rgba(0, 0, 0, .9);
     padding-top: 60px;
     transition: 0.5s;
@@ -146,7 +168,7 @@ body{
     justify-content: center;
     text-align: center;
     padding: 0;
-  }
+}
 
   .sidenav a,
   .sidenav ul,
@@ -158,19 +180,15 @@ body{
     text-transform: uppercase;
     transition: 0.3s;
     padding: .5em;
-  }
+}
 
-  #side-logo{
+#side-logo{
     max-width: 40%;
     padding: .5em;
-  }
+}
 
-  .closebtn{
+.closebtn{
     padding: 0;
-  }
-  
-.sidenav a:hover {
-    color: #FFDB58;
 }
   
 .sidenav li{
@@ -189,7 +207,7 @@ body{
 
 /*Header Start*/
 
-header {
+header{
     font-family: 'Happy Monkey', cursive;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -227,6 +245,7 @@ header div{
     border: none;
     padding: 1em;
     width: 20%;
+    cursor: pointer;
 }
 
 .logohbmenu button img{
@@ -234,7 +253,16 @@ header div{
     margin: .5em;
     background-color: #fce89d;
     box-shadow: var(--text-shadow);
+    transition: all .2s ease-in-out; 
+}
 
+.logohbmenu button img:hover{
+    background-color: #ffeeb2;
+    transform: translatex(4px);
+}
+
+.logohbmenu button img:active{
+    transform: scale(1.5);
 }
 
 img#hbmenu{
@@ -252,16 +280,11 @@ img#hbmenu{
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style-type: none;
     padding-inline-start: 0;
 }
 
 a{
     padding: 0 1em;
-}
-
-a:hover{
-    cursor: pointer;
 }
 
 .contact{
@@ -292,6 +315,7 @@ main{
     flex-direction: column;
     padding: 2em 0;
 }
+
 .about h1{
     display: none;
     padding: 1rem 3rem;
@@ -304,7 +328,7 @@ main{
     padding: 0 3rem;
   }
 
-.button{
+.read-more-button{
     display: flex;
     justify-content: center;
 }
@@ -317,14 +341,6 @@ main{
     background-color: transparent;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 5px 10px;
-}
-
-#myBtn:hover{
-    cursor: pointer;
-    border-radius: 25px;
-    transition-duration: .5s;
-    background-color: rgba(0, 0, 0, .1);
 }
 
 #more {display: none;}
@@ -334,21 +350,20 @@ main{
 /*Menu Start*/
 
 .menu{
-    background-color: rgba(0,0,0,0.5);
+    background-color: var(--bg-color);
     width: 85%;
-    border-radius: 25px;
+    border-radius: 20px;
     align-items: center;
     margin: auto;
     margin-bottom: 2em;
-    padding: 1em 2em;
 }
 
 .menu-button-bar{
-    margin-top: 1em;
+    padding-top: 1em;
     text-align: center;
     width: 100%;
+    overflow: hidden;
 }
-
 
 .menu-button-bar button{
     background-color: transparent;
@@ -358,13 +373,16 @@ main{
 
 h2.menu-button{
     padding: 5px 10px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .menu-button:hover{
     cursor: pointer;
     transition-duration: .5s;
-    background-color: rgba(0, 0, 0, .5);
+    transition: all .2s ease-in-out;
+    transform: scale(1.15);
+    color: #FFDB58;
+    cursor: pointer;
 }
 
 .food{
@@ -374,12 +392,13 @@ h2.menu-button{
     background-color: black;
     border-radius: 25px;
     transition-duration: 1.5s;
+    border-radius: 0 0 20px 20px;
 }
 
 .food img{
     width:33.33%;
     object-fit: cover;
-    border-radius: 25px 0 0 25px;
+    border-radius: 0 0 0 20px;
 }
 
 .menu .food div{
@@ -476,11 +495,6 @@ h2.menu-button{
         width: 100%;
     }
 
-    .menu-button-bar{
-        font-size: 10px;
-    }
-
-
     #logo{
         display: none;
     }
@@ -498,6 +512,12 @@ h2.menu-button{
         justify-content: flex-end;
     }
 
+}
+
+@media only screen and (max-width: 720px) {
+    .menu-button-bar{
+        font-size: 10px;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
