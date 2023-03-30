@@ -28,31 +28,43 @@ font-family: 'Luckiest Guy', cursive;*/
     margin: 0;
 }
 
-ul{
+body{
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+    width: 100%;
+    background: linear-gradient(140deg, rgba(215,49,53,1) 0%, rgba(255,224,22,1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*had backdrop-filter: saturate(2.5); in body tag causing 
+    header to not stay in fixed position*/
+}
+
+/*Default States for <TAGS> + animations/transitions*/
+
+ul,
+li{
     list-style-type: none;
+    padding: 0;
 }
 
 a,
 button{
     all: unset;
+    cursor: pointer;
 }
 
-header a:hover,
+a{
+    padding: 0 1em;
+}
+
+a:hover,
 li:hover,
 #myBtn:hover{
     transition: all .2s ease-in-out;
     transform: scale(1.15);
     color: #FFDB58;
-    cursor: pointer;
 }
-
-a:hover{
-    transition: all .2s ease-in-out;
-    transform: scale(1.15);
-    color: #FFDB58;
-    cursor: pointer;
-}
-
 
 .fade-in{
     animation: fadeIn 1s;
@@ -89,26 +101,12 @@ p{
     font-size: 1.2em;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    scroll-behavior: smooth;
-    width: 100%;
-    background: linear-gradient(140deg, rgba(215,49,53,1) 0%, rgba(255,224,22,1) 100%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    /*had backdrop-filter: saturate(2.5); in body tag causing 
-    header to not stay in fixed position*/
-}
+/*Default States for <TAGS> + animations/transitions*/
+
 
 /*Banner Start*/
 
 .banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     max-width: 900px;
     background-color: var(--bg-color);
     background-image: url(../images/header-left.png), url(../images/header-right.png), url(../images/footer-left.png), url(../images/footer-right.png);
@@ -170,11 +168,10 @@ body{
     padding: 0;
 }
 
-  .sidenav a,
-  .sidenav ul,
-  .sidenav p {
+.sidenav a,
+.sidenav ul,
+.sidenav p{
     font-family: 'Happy Monkey', cursive;
-    text-decoration: none;
     font-size: 25px;
     color: #ffffff;
     text-transform: uppercase;
@@ -189,10 +186,6 @@ body{
 
 .closebtn{
     padding: 0;
-}
-  
-.sidenav li{
-    list-style: none;
 }
 
 .sidenav .closebtn{
@@ -230,22 +223,16 @@ header{
     list-style: none;
 }
 
-header div{
-    width: 20%;
+.logohbmenu{
     display: flex;
-}
-
-.navbar{
-    width: 60%;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .logohbmenu button{
     background: transparent;
     border: none;
-    padding: 1em;
     width: 20%;
-    cursor: pointer;
+
 }
 
 .logohbmenu button img{
@@ -276,24 +263,23 @@ img#hbmenu{
     max-height: 140px;
 }
 
+.navbar{
+    width: 50%;
+    justify-content: space-around;
+}
+
 .navbar ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-inline-start: 0;
-}
-
-a{
-    padding: 0 1em;
 }
 
 .contact{
-    margin-right: 1em;
+    display: flex;
     justify-content: flex-end;
 }
 
 .contact a{
-    padding: 0 1em;
     margin-top: 7px;
 }
 
@@ -335,7 +321,7 @@ main{
 
 #myBtn{
     font-family: 'Happy Monkey', cursive;
-    margin: .5rem .5rem;
+    margin: .5em .5em;
     font-size: 1.5em;
     border: none;
     background-color: transparent;
@@ -356,9 +342,13 @@ main{
     align-items: center;
     margin: auto;
     margin-bottom: 2em;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
 }
 
 .menu-button-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-top: 1em;
     text-align: center;
     width: 100%;
@@ -368,21 +358,19 @@ main{
 .menu-button-bar button{
     background-color: transparent;
     padding: 0;
-    margin: 0;
+    margin: 0 2px;
 }
 
 h2.menu-button{
     padding: 5px 10px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .menu-button:hover{
-    cursor: pointer;
     transition-duration: .5s;
     transition: all .2s ease-in-out;
     transform: scale(1.15);
     color: #FFDB58;
-    cursor: pointer;
 }
 
 .food{
@@ -414,7 +402,6 @@ h2.menu-button{
 .footer-main{
     display: flex;
     align-items: center;
-    font-size: 1em;
     text-transform: uppercase;
     font-family: 'Happy Monkey', cursive;
     font-weight: bolder;
@@ -431,9 +418,7 @@ h2.menu-button{
     width: 33.33%;
 }
 
-
 .location {
-    margin-left: 1em;
     margin: 1em 1em;
 }
 
@@ -450,16 +435,27 @@ h2.menu-button{
 
 .mascot{
     transform: scaleX(-1);
-    max-height: 140px;
 }
 
 .mascot img{
     max-height: 140px;
     z-index: 1000;
-
 }
 
 /*Footer End*/
+
+@media only screen and (max-width: 420px){
+
+    h2.menu-button{
+        padding: 5px 10px;
+        border-radius: 5px 5px;
+        margin: 5px 0;
+    }
+
+    .menu-button-bar{
+        justify-content: flex-start;
+    }
+}
 
 @media only screen and (max-width: 450px) {
     .about h1{
@@ -473,6 +469,10 @@ h2.menu-button{
 
 @media only screen and (max-width: 650px) {
 
+    .contact a{
+        font-size: 1.5em;
+    }
+
     .banner{
         display: none;
     }
@@ -484,7 +484,6 @@ h2.menu-button{
     .menu{ 
         width: 100%;
         border-radius: 0%;
-        padding: 0;
     }
 
     .food {
@@ -505,11 +504,6 @@ h2.menu-button{
 
     img#hbmenu{
         display: block;
-    }
-
-    header .contact{
-        width: 50%;
-        justify-content: flex-end;
     }
 
 }
