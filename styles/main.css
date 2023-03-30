@@ -4,9 +4,9 @@
 #931009	red
 #c48d54	bread
 #f1e4d6	off white
-font-family: 'Gloria Hallelujah', cursive;
-font-family: 'Happy Monkey', cursive;
-font-family: 'Luckiest Guy', cursive;*/
+font-family: 'Gloria Hallelujah';
+font-family: 'Happy Monkey';
+font-family: 'Luckiest Guy';*/
 
 
 :root {
@@ -91,7 +91,7 @@ li:hover,
 }
 
 h1{
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
     font-size: 2.5em;
     font-weight: bolder;
     display: flex;
@@ -99,15 +99,16 @@ h1{
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
+    padding: 10px 0;
 }
 
 h2{
-    font-family: 'Happy Monkey', cursive;
+    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
     padding: 1rem 3rem;
 }
 
 p{
-    font-family: 'Happy Monkey', cursive;
+    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
     padding: 1rem 3rem;
     font-size: 1.2em;
 }
@@ -184,7 +185,7 @@ p{
 .sidenav a,
 .sidenav ul,
 .sidenav p{
-    font-family: 'Happy Monkey', cursive;
+    font-family: 'Happy Monkey', 'Arial', sans-serif, cursive;
     font-size: 25px;
     color: #ffffff;
     text-transform: uppercase;
@@ -222,7 +223,7 @@ p{
 }
 
 header{
-    font-family: 'Happy Monkey', cursive;
+    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: bolder;
@@ -346,7 +347,7 @@ main{
 }
 
 #myBtn{
-    font-family: 'Happy Monkey', cursive;
+    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
     font-size: 1.5em;
     border: none;
     background-color: transparent;
@@ -427,7 +428,7 @@ h2.menu-button{
 footer{
     display: flex;
     text-transform: uppercase;
-    font-family: 'Happy Monkey', cursive;
+    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
     font-weight: bolder;
     justify-content: space-between;
     width: 100%;
