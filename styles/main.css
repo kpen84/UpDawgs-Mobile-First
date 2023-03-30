@@ -1,12 +1,11 @@
-/* Colors 
-#b1cdab	green
-#ffdb58	yellow
-#931009	red
-#c48d54	bread
-#f1e4d6	off white
-font-family: 'Gloria Hallelujah';
-font-family: 'Happy Monkey';
-font-family: 'Luckiest Guy';*/
+@font-face {
+    font-family: 'happy_monkeyregular';
+    src: url('../happymonkey/happymonkey-regular-webfont.woff2') format('woff2'),
+         url('../happymonkey/happymonkey-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 :root {
@@ -91,7 +90,7 @@ li:hover,
 }
 
 h1{
-    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
+    font-family: 'happy_monkeyregular';
     font-size: 2.5em;
     font-weight: bolder;
     display: flex;
@@ -103,12 +102,12 @@ h1{
 }
 
 h2{
-    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
+    font-family: 'happy_monkeyregular';
     padding: 1rem 3rem;
 }
 
 p{
-    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
+    font-family: 'happy_monkeyregular';
     padding: 1rem 3rem;
     font-size: 1.2em;
 }
@@ -185,7 +184,7 @@ p{
 .sidenav a,
 .sidenav ul,
 .sidenav p{
-    font-family: 'Happy Monkey', 'Arial', sans-serif, cursive;
+    font-family: 'happy_monkeyregular';
     font-size: 25px;
     color: #ffffff;
     text-transform: uppercase;
@@ -223,7 +222,7 @@ p{
 }
 
 header{
-    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
+    font-family: 'happy_monkeyregular';
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: bolder;
@@ -347,7 +346,7 @@ main{
 }
 
 #myBtn{
-    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
+    font-family: 'happy_monkeyregular';
     font-size: 1.5em;
     border: none;
     background-color: transparent;
@@ -428,7 +427,7 @@ h2.menu-button{
 footer{
     display: flex;
     text-transform: uppercase;
-    font-family: 'Luckiest Guy', 'Helvetica', 'Arial', sans-serif, cursive;
+    font-family: 'happy_monkeyregular';
     font-weight: bolder;
     justify-content: space-between;
     width: 100%;
