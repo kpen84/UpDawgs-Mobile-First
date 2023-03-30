@@ -18,7 +18,11 @@ font-family: 'Luckiest Guy', cursive;*/
     -30px 30px 40px rgba(0, 0, 0, .3);
     --text-shadow: 3px 3px 3px rgba(0, 0, 0, .8);
     --tab-width: 900px;
-  }
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 *{
     min-width: 0;
@@ -41,6 +45,13 @@ body{
 }
 
 /*Default States for <TAGS> + animations/transitions*/
+
+.spacer{
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    z-index: 998;
+}
 
 ul,
 li{
@@ -148,24 +159,26 @@ p{
 
 /*Side Nav Start*/
 
-.sidenav{
+#mySidenav.sidenav{
     height: 100%;
     margin: 0;
-    overflow: hidden;
     width: 60%;
     position: fixed; 
     z-index: 2000; 
     top: 0; 
     left: -100%;
     background-color: rgba(0, 0, 0, .9);
-    padding-top: 60px;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0;
+    padding: 1em;
+}
+
+.sidenav-content{
+    height: 80%;
 }
 
 .sidenav a,
@@ -199,6 +212,14 @@ p{
 /*Side Nav End*/
 
 /*Header Start*/
+
+#home{
+    position: relative;
+    top: -150px;
+    z-index: 998;
+    width: 100%;
+    max-height: 140px;
+}
 
 header{
     font-family: 'Happy Monkey', cursive;
@@ -299,7 +320,11 @@ main{
 .about{
     display: flex;
     flex-direction: column;
-    padding: 2em 0;
+    padding-top: 2em;
+}
+
+.about-text p{
+    padding: 1rem 3rem 0 3rem ;
 }
 
 .about h1{
@@ -312,16 +337,16 @@ main{
     width: 50%;
     min-width: 350px;
     padding: 0 3rem;
-  }
+}
 
 .read-more-button{
+    height: 130px;
     display: flex;
     justify-content: center;
 }
 
 #myBtn{
     font-family: 'Happy Monkey', cursive;
-    margin: .5em .5em;
     font-size: 1.5em;
     border: none;
     background-color: transparent;
@@ -504,6 +529,10 @@ h2.menu-button{
 
     img#hbmenu{
         display: block;
+    }
+
+    .read-more-button{
+        height: 66px;
     }
 
 }
