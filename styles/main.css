@@ -424,12 +424,24 @@ h2.menu-button{
 
 /*Footer Start*/
 
+.mascot{
+    transform: scaleX(-1);
+}
+
+.mascot img{
+    max-height: 100px;
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+}
+
 .footer-main{
     display: flex;
     align-items: center;
     text-transform: uppercase;
     font-family: 'Happy Monkey', cursive;
     font-weight: bolder;
+    justify-content: space-between;
     width: 100%;
     max-height: 140px;
     min-height: 70px;
@@ -439,32 +451,23 @@ h2.menu-button{
     overflow: hidden;
 }
 
-.footer-main div{
+footer .footer-main div{
     width: 33.33%;
-}
-
-.location {
-    margin: 1em 1em;
-}
-
-.location a{
-    padding: 0;
-}
-
-.hours p{
-    padding: 0;
     text-align: center;
+}
+
+.location,
+.hours,
+.number {
+    margin: 0;
+    padding: 1em;
+}
+
+footer a,
+footer p{
+    margin: 0;
+    padding: 0;
     font-size: 1em;
-    margin: 1em 1em;
-}
-
-.mascot{
-    transform: scaleX(-1);
-}
-
-.mascot img{
-    max-height: 140px;
-    z-index: 1000;
 }
 
 /*Footer End*/
@@ -479,6 +482,10 @@ h2.menu-button{
 
     .menu-button-bar{
         justify-content: flex-start;
+    }
+
+    .mascot{
+        display: none;
     }
 }
 
