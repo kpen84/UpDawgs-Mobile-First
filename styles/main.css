@@ -22,7 +22,6 @@
          url('../fonts/happymonkey-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 :root {
@@ -264,6 +263,7 @@ header{
 }
 
 .logohbmenu{
+    width: 20%;
     display: flex;
     justify-content: flex-start;
 }
@@ -304,7 +304,7 @@ img#hbmenu{
 }
 
 .navbar{
-    width: 50%;
+    width: 40%;
     justify-content: space-around;
 }
 
@@ -315,12 +315,13 @@ img#hbmenu{
 }
 
 .contact{
+    width: 20%;
     display: flex;
     justify-content: flex-end;
 }
 
 a.fa{
-    padding-right: 1.2em;
+    padding-right: 1.5em;
     font-size: 1em;
 }
 
@@ -347,7 +348,7 @@ main{
     padding: 1rem 3rem 0 3rem ;
 }
 
-.about h1{
+.whatsupdawgs{
     display: none;
     padding: 1rem 3rem;
     text-align: left;
@@ -479,21 +480,27 @@ footer a:hover{
 }
 
 .mascot{
-    min-height: 145px;
-    min-width: 145px;
     transform: scaleX(-1);
-    bottom: 0;
 }
 
 .mascot img{
-    height: 100%;
+    max-height: 140px;
+    max-width: 140px;
     position: fixed;
-
+    bottom: 0;
+    overflow-y: visible;
 }
 
 /*Footer End*/
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 450px) {
+    .whatsupdawgs{
+        display: flex;
+    }
+
+    .updawg{
+        display: none;
+    }
 
     h2.menu-button{
         padding: 5px 10px;
@@ -505,18 +512,9 @@ footer a:hover{
         justify-content: flex-start;
     }
 
-    .mascot{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .about h1{
-        display: flex;
-    }
-
-    .updawg{
-        display: none;
+    .mascot img{
+        max-height: 100px;
+        max-width: 100px;
     }
 }
 
@@ -574,20 +572,21 @@ footer a:hover{
 
 @media only screen and (min-width: 1500px) {
     main{
-        max-width: 1200px;
-    }
-}   
-    .banner{
-        max-width: 1200px;
+        max-width: 1500px;
     }
 
+    .banner{
+        max-width: 1500px;
+    }
+}
 
 
 @media only screen and (min-width: 1800px) {
     main{
         max-width: 1500px;
     }
-}   
+
     .banner{
         max-width: 1500px;
     }
+}
