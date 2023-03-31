@@ -463,13 +463,22 @@ footer{
     justify-content: space-around;
     padding: 1em;
     min-height: 140px;
+    align-items: flex-start;
 }
 
 footer a,
 footer p{
+    font-family: 'gloria_hallelujahregular';
     margin: 0 0;
     padding: 0 0;
     font-size: 1em;
+    position: left;
+}
+
+footer a:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    color: #FFDB58;
 }
 
 .mascot{
