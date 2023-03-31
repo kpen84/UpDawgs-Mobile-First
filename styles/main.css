@@ -361,7 +361,7 @@ main{
 }
 
 .read-more-button{
-    height: 130px;
+    height: 145px;
     display: flex;
     justify-content: center;
 }
@@ -388,7 +388,6 @@ main{
     align-items: center;
     margin: auto;
     margin-bottom: 65px;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
 }
 
 .menu-button-bar{
