@@ -18,4 +18,3 @@ Features:
 -Javascript was used to make resposive nav elements on both the header and the side-nav (side-nav is only visisble on mobile layout). When you click on "home", the page auto scrolls to the top of the page. When you click on "menu", the page auto scrolls to the menu section. The auto-scroll stops short of the menu section on larger displays because of the overall size of the site.
 
 -The tab-style menu is completely responsive and was achieved using Javascript as well. The active tab displays a black background so the user knows which tab they are currently viewing. The menu sections fade in and out using keyframes in CSS to style a .fadeIn class selector.
-
