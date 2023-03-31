@@ -1,12 +1,29 @@
 @font-face {
-    font-family: 'happy_monkeyregular';
-    src: url('../happymonkey/happymonkey-regular-webfont.woff2') format('woff2'),
-         url('../happymonkey/happymonkey-regular-webfont.woff') format('woff');
+    font-family: 'gloria_hallelujahregular';
+    src: url('../fonts/gloriahallelujah-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gloriahallelujah-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+@font-face {
+    font-family: 'luckiest_guyregular';
+    src: url('../fonts/luckiestguy-regular-webfont.woff2') format('woff2'),
+         url('../fonts/luckiestguy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'happy_monkeyregular';
+    src: url('../fonts/happymonkey-regular-webfont.woff2') format('woff2'),
+         url('../fonts/happymonkey-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 :root {
     --bg-color: #D73135;
@@ -58,24 +75,6 @@ li{
     padding: 0;
 }
 
-a,
-button{
-    all: unset;
-    cursor: pointer;
-}
-
-a{
-    padding: 0 1em;
-}
-
-a:hover,
-li:hover,
-#myBtn:hover{
-    transition: all .2s ease-in-out;
-    transform: scale(1.15);
-    color: #FFDB58;
-}
-
 .fade-in{
     animation: fadeIn 1s;
 }
@@ -90,7 +89,7 @@ li:hover,
 }
 
 h1{
-    font-family: 'happy_monkeyregular';
+    font-family: 'luckiest_guyregular';
     font-size: 2.5em;
     font-weight: bolder;
     display: flex;
@@ -107,9 +106,28 @@ h2{
 }
 
 p{
-    font-family: 'happy_monkeyregular';
+    font-family: 'gloria_hallelujahregular';
     padding: 1rem 3rem;
     font-size: 1.2em;
+}
+
+a{
+    font-family: 'happy_monkeyregular';
+    padding: 0 1em;
+}
+
+a,
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+a:hover,
+li:hover,
+#myBtn:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.15);
+    color: #FFDB58;
 }
 
 /*Default States for <TAGS> + animations/transitions*/
@@ -291,7 +309,7 @@ img#hbmenu{
 
 .navbar ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -300,8 +318,9 @@ img#hbmenu{
     justify-content: flex-end;
 }
 
-.contact a{
-    margin-top: 7px;
+a.fa{
+    padding-right: 1.2em;
+    font-size: 1em;
 }
 
 /*Header End*/
@@ -497,7 +516,7 @@ footer p{
 
 @media only screen and (max-width: 650px) {
 
-    .contact a{
+    a.fa{
         font-size: 1.5em;
         margin: 0;
     }
@@ -558,11 +577,11 @@ footer p{
 
 
 
-    @media only screen and (min-width: 1800px) {
-        main{
-            max-width: 1500px;
-        }
-    }   
-        .banner{
-            max-width: 1500px;
-        }
+@media only screen and (min-width: 1800px) {
+    main{
+        max-width: 1500px;
+    }
+}   
+    .banner{
+        max-width: 1500px;
+    }
