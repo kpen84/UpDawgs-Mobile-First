@@ -56,6 +56,7 @@ body{
     background: linear-gradient(140deg, rgba(215,49,53,1) 0%, rgba(255,224,22,1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
     /*had backdrop-filter: saturate(2.5); in body tag causing 
     header to not stay in fixed position*/
 }
@@ -385,7 +386,7 @@ main{
     border-radius: 20px;
     align-items: center;
     margin: auto;
-    margin-bottom: 2em;
+    margin-bottom: 65px;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
 }
 
@@ -420,9 +421,7 @@ h2.menu-button{
 .food{
     width: 100%;
     display: flex;
-    text-overflow: scroll;
     background-color: black;
-    border-radius: 25px;
     transition-duration: 1.5s;
     border-radius: 0 0 20px 20px;
 }
@@ -444,17 +443,16 @@ h2.menu-button{
 /*Footer Start*/
 
 footer{
+    margin-top: auto;
     display: flex;
     text-transform: uppercase;
     font-family: 'happy_monkeyregular';
     font-weight: bolder;
     justify-content: space-between;
     width: 100%;
-    min-height: 140px;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
     clip-path: inset(-15px 0px -15px 0px);
     background-color: var(--bg-color);
-    overflow: hidden;
 }
 
 .footer-main{
@@ -462,7 +460,6 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     padding: 1em;
-    min-height: 140px;
     align-items: flex-start;
 }
 
