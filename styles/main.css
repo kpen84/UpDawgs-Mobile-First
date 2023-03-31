@@ -89,7 +89,7 @@ li{
 }
 
 h1{
-    font-family: 'luckiest_guyregular';
+    font-family: 'luckiest_guyregular', Arial, Helvetica, sans-serif;
     font-size: 2.5em;
     font-weight: bolder;
     display: flex;
@@ -101,18 +101,18 @@ h1{
 }
 
 h2{
-    font-family: 'happy_monkeyregular';
+    font-family: 'happy_monkeyregular', Arial, Helvetica, sans-serif;
     padding: 1rem 3rem;
 }
 
 p{
-    font-family: 'gloria_hallelujahregular';
+    font-family: 'gloria_hallelujahregular', Arial, Helvetica, sans-serif;
     padding: 1rem 3rem;
     font-size: 1.2em;
 }
 
 a{
-    font-family: 'happy_monkeyregular';
+    font-family: 'happy_monkeyregular', Arial, Helvetica, sans-serif;
     padding: 0 1em;
 }
 
@@ -202,7 +202,7 @@ li:hover,
 .sidenav a,
 .sidenav ul,
 .sidenav p{
-    font-family: 'happy_monkeyregular';
+    font-family: 'happy_monkeyregular', Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: #ffffff;
     text-transform: uppercase;
@@ -240,7 +240,7 @@ li:hover,
 }
 
 header{
-    font-family: 'happy_monkeyregular';
+    font-family: 'happy_monkeyregular', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: bolder;
@@ -367,7 +367,7 @@ main{
 }
 
 #myBtn{
-    font-family: 'happy_monkeyregular';
+    font-family: 'happy_monkeyregular', Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     border: none;
     background-color: transparent;
@@ -447,7 +447,7 @@ footer{
     margin-top: auto;
     display: flex;
     text-transform: uppercase;
-    font-family: 'happy_monkeyregular';
+    font-family: 'happy_monkeyregular', Arial, Helvetica, sans-serif;
     font-weight: bolder;
     justify-content: space-between;
     width: 100%;
@@ -466,7 +466,7 @@ footer{
 
 footer a,
 footer p{
-    font-family: 'gloria_hallelujahregular';
+    font-family: 'gloria_hallelujahregular', Arial, Helvetica, sans-serif;
     margin: 0 0;
     padding: 0 0;
     font-size: 1em;
